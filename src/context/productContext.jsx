@@ -29,7 +29,7 @@ export function ProductsContextProvider({children}){
             async function listaProdutos(){
                 setLoading(true)
               
-                const res = await fetch('https://api-json-ecommerce.vercel.app')
+                const res = await fetch('https://api-json-ecommerce.vercel.app/products')
                 const dados = await res.json()
                 setProducts(dados)
                 setFilter(dados)      

@@ -23,7 +23,7 @@ export function Product(){
        try{
          async function getProducts(){
             setLoading(true)
-             const res = await fetch(`https://api-json-ecommerce.vercel.app/${id}`)
+             const res = await fetch(`https://api-json-ecommerce.vercel.app/products/${id}`)
              const dado = await res.json()
            setProduct(dado)
              setLoading(false)

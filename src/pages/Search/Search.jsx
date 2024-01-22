@@ -17,7 +17,7 @@ export function Search(){
     
  useEffect(()=> {
          async function searchProducts(){
-             const res = await fetch("https://api-json-ecommerce.vercel.app/search?" + searchParams)
+             const res = await fetch("https://api-json-ecommerce.vercel.app/products?" + searchParams)
              const dado = await res.json()
              setProductSearch(dado)
              console.log(dado)
