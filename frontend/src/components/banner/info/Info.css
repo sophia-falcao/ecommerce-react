@@ -1,0 +1,32 @@
+.container_infos{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    height: 10vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+   
+}
+
+.container_infos > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14pt;
+    color: gray;
+    
+}
+
+.container_infos > div span{
+    color: black;
+    font-size: 20pt;
+}
+
+.container_infos > div p{
+    margin-left: 10px;
+    font-size: 13pt;
+    text-transform: uppercase;
+
+}
+

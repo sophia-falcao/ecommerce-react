@@ -1,0 +1,33 @@
+.cart_button{
+   cursor: pointer;
+    background-color: transparent;
+    color: rgb(20, 20, 20);
+    border: none;
+    font-size: 18pt;
+    padding: 1px;
+    margin: 0;
+    max-width: 50px;
+    position: relative;
+   
+}
+
+.cart_button span{
+    font-size: 12pt;
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    border: 1px solid;
+    border-radius: 20px;
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    color: white;
+}
+
+
+@media (max-width:450px){
+    .cart_button{
+        margin-right: 30px;
+        font-size: 15pt;
+    }
+}

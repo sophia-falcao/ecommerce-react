@@ -1,0 +1,23 @@
+.btn_category_responsive button{
+    width: 10px;
+    height: 30px;
+   padding: 0;
+    margin: 0;
+    font-size: 30pt;
+    background: transparent;
+    border: none;
+
+}
+
+@media screen and (max-width: 450px){
+    .btn_category_responsive button{
+        width: 10px;
+        height: 30px;
+       padding: 0;
+        margin: 0;
+        font-size: 20pt;
+        background: transparent;
+        border: none;
+    
+    }
+}

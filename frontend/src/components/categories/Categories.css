@@ -1,0 +1,154 @@
+.container_category{
+    display: flex;
+    margin: 50px 0px;
+    align-items: center;
+    justify-content: center;
+    
+    width: 90%;
+   height: 100%;
+}
+
+.container_category_img{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    
+}
+
+.categoria_mulher{
+    background-image: url('https://images.unsplash.com/photo-1617922001439-4a2e6562f328?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-size: cover;
+    padding: 7em;
+    margin: 15px;
+    width: 260px;
+    height: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    position: relative;
+    
+    
+}
+.categoria_homem{
+    background-image: url('https://images.unsplash.com/photo-1559582798-678dfc71ccd8?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-size: cover;
+    padding: 7em;
+    margin: 10px;
+    width: 220px;
+    height: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    position: relative;
+}
+.categoria_beleza{
+    background-image: url('https://images.unsplash.com/photo-1571963294215-87e747b2db2b?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    background-size: cover;
+    padding: 7em;
+    margin: 15px;
+    width: 260px;
+    height: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    position: relative;
+}
+.categoria_acessorios{
+    background-image: url('https://images.unsplash.com/photo-1622569393438-a875792bd3d9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    box-sizing: border-box;
+    background-size: cover;
+    padding: 2em;
+    margin: 10px;
+    width: 400px;
+    height: 200px;
+    border-radius: 13px;
+    cursor: pointer;
+    position: relative;
+    transition: 1s;
+} 
+.categoria_sapatos{
+    background-image: url('https://images.unsplash.com/photo-1580894529572-79b20170f355?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
+    box-sizing: border-box;
+    background-size: cover;
+    padding: 2em;
+    margin: 13px;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+   cursor: pointer;
+    transition: 1s;   
+    position: relative;  
+
+}
+
+
+
+.text_category p{
+    transform: rotate(-90deg);
+    background-color: black;
+    color: white;
+    width: 280px;
+    height: 35px;
+    border-radius: 10px;
+    text-align: center;
+    font-size:  18pt;
+}
+
+
+.categ:hover{
+    transform: scale(1.1);
+}
+
+
+.categ p {
+    background-color: rgb(245, 245, 245);
+    color: rgb(255, 4, 4);
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    font-size: 16pt;
+    position: absolute;
+    top: 15px;
+    left: -13px;
+    transform: rotate(-30deg);
+}
+    
+@media screen and (min-width:280px) and (max-width:430px){
+    .container_category{
+        display: flex;
+        margin: 130px 0px;
+        align-items: center;
+        justify-content: center;
+        
+        width: 90%;
+       height: 100%;
+    }
+
+    .container_category{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    .text_category p{
+        transform: rotate(0);
+    }
+    .categ:hover{
+        transform: scale(1.0);
+    }
+}
+
+
+@media screen and (min-width:431px) and (max-width:850px){
+    .categ:hover{
+        transform: scale(1.0);
+    }
+}

@@ -1,0 +1,162 @@
+
+.card_products{
+    width: 210px;
+    height: 420px;
+   border-radius: 5px;
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+    margin: 10px;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    text-align: center;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+   
+    
+}
+
+.card_products:hover{
+    box-shadow: 0 0 20px rgb(41, 41, 41);
+   
+   
+}
+
+
+.desconto_card{
+    background-color: rgb(250, 176, 80);
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    width: 70px;
+    height: 20px;
+    z-index: 1;
+}
+
+.desconto_ativo{
+    text-decoration: line-through;  
+}
+
+
+.card_prices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_foto img{
+    object-fit: cover;
+    object-position: center;
+    image-rendering: auto;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 290px;
+  
+}
+
+
+.card_products h2{
+    font-size: 14pt;
+    letter-spacing: 2px;
+    margin: 1px;
+    text-transform: capitalize;
+}
+
+.card_products p{
+    flex-direction: column;
+    margin: 1px 3px;
+    font-size: 13pt;
+    margin-bottom: 3px;
+    font-weight: 600;
+    color: black;
+}
+
+
+.card_products .parcela {
+    color: rgb(100, 172, 7);
+}
+
+.parcela span{
+    font-size: 11pt;
+}
+
+.btn_cart{
+    display: none;
+}
+
+.card_products:hover .btn_cart{
+    display: block;
+    padding: 3px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    color: rgb(0, 255, 13);
+    margin: 10px;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+   border: 1px solid beige;
+   border-radius: 10px;
+    z-index: 3;
+    cursor: pointer;
+
+}
+
+.card_products:hover .link_ver_mais a{
+    display: block;
+    position: absolute;
+    top: 55px;
+    right:10px;
+    font-size: 18pt;
+    background-color: rgb(255, 255, 255);
+    height: 30px;
+    border: 1px solid beige;
+    border-radius: 10px;   
+}
+
+.link_ver_mais a{
+    display: none;
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    font-size: 14pt;  
+    text-align: center;
+}
+
+
+   
+
+@media screen and (max-width:768px){
+    .card_products .btn_cart{
+        display: block;
+        padding: 3px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: rgb(0, 255, 13);
+        margin: 10px;
+        background-color: rgb(255, 255, 255);
+        font-size: 1.2rem;
+       border: 1px solid beige;
+       border-radius: 10px;
+        z-index: 3;
+    
+    }
+    .card_products .link_ver_mais a{
+        display: block;
+        position: absolute;
+        top: 55px;
+        right:10px;
+        font-size: 18pt;
+        background-color: rgb(255, 255, 255);
+        height: 30px;
+        border: 1px solid beige;
+        border-radius: 10px;
+        
+        
+    }
+
+ 
+}

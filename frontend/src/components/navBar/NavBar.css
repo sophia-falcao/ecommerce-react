@@ -1,0 +1,133 @@
+
+
+.container_header{
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100%; 
+    margin: 0;
+    padding: 0;
+   
+    
+}
+
+
+.container_header .container{
+    display: flex;
+    justify-content: space-between;
+     background-color: rgb(255, 255, 255);
+    height: 12vh;
+    padding: 0px;
+    align-items: center;
+    border-bottom: 1px groove ;  
+    
+}
+
+.container h3{
+    color: rgb(22, 21, 21);
+    font-size: 25pt;
+    justify-content: center;
+    margin: 0px 40px;
+    
+}
+
+
+
+
+.container_nav   ul{
+    display: flex; 
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0px 90px;
+   
+    
+}
+.container > nav li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 16pt;
+    list-style: none;
+   
+}
+
+.container >  nav li a{
+    
+    margin-right: 40px;
+    font-size: 20pt;
+    position: relative;
+    text-decoration: none;
+    color: rgb(32, 31, 31);
+    transition: all .8s;
+
+}
+
+.container > nav li a:hover{
+    color: rgb(100, 100, 100);
+}
+
+.container > nav li ::before{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    transition: width .8s;
+}
+
+.container nav li a:hover::before{
+    width: 100%;
+}
+
+
+.container_nav_categories{
+   
+    background-color: white;
+    height: 40px;
+    
+}
+
+.container_nav_categories ul{
+    
+    display: flex; 
+    justify-content: center;
+    
+}
+
+.container_nav_categories  ul li{
+    list-style: none;
+    margin-top: 8px;
+    
+}
+
+.container_nav_categories ul li a{
+    margin: 25px;
+    text-decoration: none;
+    font-size: 14pt;
+    cursor: pointer;
+    color: black;
+    text-transform: uppercase;
+}
+
+.container_nav_categories  ul li a:hover{
+    color: rgb(143, 194, 2);
+}
+
+ .navBar_responsive{
+    display: none;
+}
+
+.btn_category_responsive{
+    display: none;
+}
+
+
+#btn_search_responsive{
+    display: none;
+}
+
+
+

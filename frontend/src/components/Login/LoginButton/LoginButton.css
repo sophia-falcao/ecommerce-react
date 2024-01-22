@@ -1,0 +1,52 @@
+.login_button{
+    display: flex;
+    border: none;
+    padding: 0px;
+    margin: 0;
+    background-color: transparent;
+   align-items: center;
+   cursor: pointer; 
+    max-width: 80px;
+   
+}
+
+.login_button span{
+    font-weight: 500 ;
+    font-size: 16pt;
+}
+
+.btn_login_responsive_navBar{
+    display: none;
+    
+}
+
+ @media screen and (min-width:280px) and (max-width:760px){
+ 
+
+    .login_button{
+        display: none;
+     
+    }
+    
+    .btn_login_responsive_navBar{
+       
+        display: block;
+        padding: 0px;
+        border: none;
+       
+       
+    }
+    .btn_login_responsive_navBar span{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 18pt;
+        background-color: white;
+        border: none;
+        padding: 0px;
+        width: 30px;
+        height: 30px;
+       
+    }
+    
+} 

@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+button{
+  border: none;
+  
+}
+/* páginas produtos */
+
+.container_pag{
+  margin-top: 130px;
+  width: 100%;
+
+}
+
+.container_pag h1{
+  text-transform: uppercase;
+  font-size: 28pt;
+  letter-spacing: 5px;
+}
+
+.pag{
+  display: flex;
+}
+
+.filter_pag{
+  display: flex;
+  flex-direction: column;
+  margin: 40px 10px;
+  max-width: 495px;
+
+  height: 100%;
+
+}
+
+.filter_pag h2{
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border-bottom:1px groove;
+  font-size: 13pt;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+
+.filter_pag input{
+  margin: 12px ;
+ 
+}
+  
+
+.filter_pag label{
+ font-size: 13pt;
+ font-weight: 500;
+ letter-spacing: 1px;
+ 
+ 
+ 
+}
+
+.card_pagina{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container_card{
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.container_masculino{
+  border-top: 2px groove;
+  margin-top: 15px ;
+}
+
+
+
+@media screen and (min-width:280px) and (max-width:430px){
+  .container_pag{
+    margin-top: 170px;
+    width: 100%;
+  
+  }
+  
+  .container_pag h1{
+    text-transform: uppercase;
+    font-size: 22pt;
+    letter-spacing: 5px;
+  }
+  
+}
+
+@media screen and (min-width:645px) and (max-width:700px){
+  .container_pag{
+    margin-top: 170px;
+    width: 100%;
+  
+  }
+  
+  .container_pag h1{
+    text-transform: uppercase;
+    font-size: 22pt;
+    letter-spacing: 5px;
+  }
+
+  .container_card{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
+    max-width: 38%;
+    
+  }
+  
+  
+}
