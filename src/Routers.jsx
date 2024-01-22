@@ -25,7 +25,7 @@ function Routers() {
 
   return (
     <>
-      <BrowserRouter> 
+      <BrowserRouter basename='/ecommerce-react'> 
        <NavBar />
        {isSearchOpen && <SearchForm />}
        
