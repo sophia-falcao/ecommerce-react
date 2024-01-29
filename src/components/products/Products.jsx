@@ -15,7 +15,7 @@ export function Products({produto}){
   
     return(
           <>           
-            <div className='card_products' key={produto._id} id={produto._id}>          
+            <div className='card_products' key={produto.id} id={produto.id}>          
               {produto.desconto && <p className='desconto_card'>{ produto.desconto}% </p>}
             
               <div className='container_foto'>
@@ -49,7 +49,7 @@ export function Products({produto}){
               </button>
 
               <div className='link_ver_mais'>
-               <Link to={`/product/${produto._id}`} > <FaEye /> </Link>
+               <Link to={`/product/${produto.id}`} > <FaEye /> </Link>
               </div> 
            </div>
         </>

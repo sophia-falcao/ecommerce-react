@@ -16,14 +16,13 @@ export function Search(){
     
     
  useEffect(()=> {
-         async function searchProducts(){
-             const res = await fetch("https://api-json-ecommerce.vercel.app/products?" + searchParams)
-             const dado = await res.json()
-             setProductSearch(dado)
-             console.log(dado)
-         
-         }
-         searchProducts()
+        async function searchProducts(){
+            const res = await fetch("https://api-json-ecommerce.vercel.app/products?" + searchParams)
+            const dado = await res.json()
+            setProductSearch(dado)
+            console.log(dado)   
+        }
+        searchProducts()
     },[searchParams])
 
  
@@ -39,7 +38,6 @@ export function Search(){
             ))}
 
             </div> ): <p className='not_search'>Não Encontramos Esse produto <TbMoodAnnoyed /> </p> }
-       
         </div>
     )
 }

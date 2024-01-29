@@ -5,10 +5,8 @@ import { Products } from '../../components/products/Products'
 
 export function Feminino(){
 
-    const {filter, error, filterProduct, search, setSort, sort,products}=useContext(ProducContext)
+    const {filter, error, filterProduct, search, setSort, sort, products}=useContext(ProducContext)
     
-
-
     return(
         <div className='container_pag'>
             <h1>Feminino</h1>
@@ -54,9 +52,7 @@ export function Feminino(){
                         <div className='container_card' key={produto.id}>
                             <Products produto={produto}/>
                         </div>
-                    ))
-                    
-                    }
+                    ))}
                 </div>
             </div>
         </div>

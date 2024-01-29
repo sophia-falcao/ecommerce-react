@@ -68,11 +68,9 @@ export function Sapatos(){
                         <div className='container_card'>
                             <Products produto={produto}/>
                         </div>
-                    ))
-                    
-                    }
+                    ))}
                 </div>
             </div>
-        </div>
+         </div>
         </div>
     )}

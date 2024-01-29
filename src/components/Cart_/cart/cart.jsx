@@ -1,6 +1,6 @@
+import './cart.css'
 import { ProducContext } from '../../../context/productContext'
 import { useContext } from 'react'
-import './cart.css'
 import { CartItem } from '../cartItem/CartItem'
 import { FormatCurrency } from '../../../utils/FormatCurrency'
 

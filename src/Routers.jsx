@@ -39,9 +39,7 @@ function Routers() {
         <Route path='/masculino' element={<Masculino />}/>
         <Route path='/beleza' element={<Beleza />}/>
         <Route  path='/acessorios' element={<Acessorios />}/> 
-        <Route path='/calcados' element={<Sapatos />}/>
-        
-        
+        <Route path='/calcados' element={<Sapatos />}/>       
        </Routes>
        <Footer />
        <ToastContainer

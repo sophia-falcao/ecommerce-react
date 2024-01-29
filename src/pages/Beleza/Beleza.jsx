@@ -15,7 +15,7 @@ export function Beleza(){
 
     return(
         <div>
-               <div className='container_pag'>
+            <div className='container_pag'>
              <h1>Beleza</h1>
              <div className='pag'>
                 <div className='filter_pag'>
@@ -58,12 +58,10 @@ export function Beleza(){
                         <div className='container_card'>
                             <Products produto={produto}/>
                         </div>
-                    ))
-                    
-                    }
+                    ))}
                 </div>
+             </div>
             </div>
-        </div>
         </div>
     )
 }

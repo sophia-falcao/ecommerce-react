@@ -12,19 +12,14 @@ import { Banner_feminino } from '../../components/banner/banner_feminino/Banner_
 
 export function Home(){
 
-
     
     return(
-        <main className='container_home'>
-           
+        <main className='container_home'>        
             <BannerPrincipal />          
             <Info />
             <Categories />
             <Banner_feminino />
-            <BestSellers />
-         
-            
-
+            <BestSellers />      
         </main>
     )
 }

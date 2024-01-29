@@ -11,7 +11,7 @@ export function Acessorios(){
 
     return(
         <div className="container_pag">
-              <h1>Acessorios</h1>
+            <h1>Acessorios</h1>
 
             <div className='pag'>
                 <div className='filter_pag'>
@@ -59,8 +59,7 @@ export function Acessorios(){
                     
                     }
                 </div>
-            </div>
-        
+            </div>    
         </div>
     )
 }

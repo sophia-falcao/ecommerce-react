@@ -7,10 +7,6 @@ export function Masculino(){
 
     const {filter,  error, filterProduct, setSort, sort, search}=useContext(ProducContext)
     
-
-  
-    
-
     return(
         <div>
             <div className='container_pag'>
@@ -60,12 +56,10 @@ export function Masculino(){
                         <div className='container_card' >
                             <Products produto={produto}/>
                         </div>
-                    ))
-                    
-                    }
+                    ))}
                 </div>
             </div>
-        </div>
+          </div>
         </div>
     )
 }

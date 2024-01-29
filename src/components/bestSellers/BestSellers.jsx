@@ -29,16 +29,14 @@ export function BestSellers(){
   
     return(
         <section className='container_banner_bestSellers'>
-        <h1> Mais vendidos   </h1>
-      
-    
-        <div className='buttons_bestSellers' >
+         <h1> Mais vendidos   </h1>
+         <div className='buttons_bestSellers' >
             <button className='btn_carrousel'onClick={handleLeft} > <FaArrowLeft /> </button>
           <div className='carrousel_bestSellers' ref={bestSellers}>  
                { error? (
                    <p> Ops: {error}</p>
                    ) :  products.filter(produto=> produto.vendas > 10 ).map( produto => (                           
-                       <div className='item' key={produto._id}>
+                       <div className='item' key={produto.id}>
                            <Products produto={produto}/>
                         </div>        
                    )
@@ -46,7 +44,7 @@ export function BestSellers(){
           </div>
        
          <button className='btn_carrousel' onClick={handleRigth}> <FaArrowRight /> </button>
-        </div>
+         </div>
        </section>
 
        

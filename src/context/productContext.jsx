@@ -56,11 +56,11 @@ export function ProductsContextProvider({children}){
     function handleAddCart(produto, quantity){
         setCartProduct((prevItems) => {
  
-         const itemExist =  prevItems.find((item) => item._id === produto._id)
+         const itemExist =  prevItems.find((item) => item.id === produto.id)
  
           if(itemExist){
             toast.info(`Quantidade do item ${produto.title} atualizada com sucesso`)
-            return prevItems.map(item => item._id === produto._id ? {...item, quantity: item.quantity + quantity} : item)
+            return prevItems.map(item => item.id === produto.id ? {...item, quantity: item.quantity + quantity} : item)
  
  
           } else{
@@ -70,15 +70,15 @@ export function ProductsContextProvider({children}){
        })
     }
 
-    function removeItem(_id, title){
+    function removeItem(id, title){
         toast.error(`${title} foi removido com sucesso`)
-        const removeFilter = cartProduct.filter(item => item._id !== _id)
+        const removeFilter = cartProduct.filter(item => item.id !== id)
         setCartProduct(removeFilter)
     }
     
-    function handleIncre(_id){
+    function handleIncre(id){
         const updateCart = cartProduct.map(item => {
-            if(item._id === _id){
+            if(item.id === id){
                 return {
                     ...item,
                     quantity: item.quantity + 1
@@ -90,9 +90,9 @@ export function ProductsContextProvider({children}){
         setCartProduct(updateCart)
     }
 
-    function handleDecre(_id){
+    function handleDecre(id){
         const updateCart = cartProduct.map(item => {
-            if(item._id === _id){
+            if(item.id === id){
                 return {
                     ...item,
                     quantity: item.quantity - 1
@@ -109,11 +109,11 @@ export function ProductsContextProvider({children}){
    
         setCartProduct((prevItems) => {
  
-         const itemExist =  prevItems.find((item) => item._id === produto._id)
+         const itemExist =  prevItems.find((item) => item.id === produto.id)
          
           if(itemExist){
             toast.info(`Quantidade do item ${produto.title} atualizada com sucesso`)
-            return prevItems.map(item => item._id === produto._id ? {...item, quantity: item.quantity + quantity} : item)
+            return prevItems.map(item => item.id === produto.id ? {...item, quantity: item.quantity + quantity} : item)
            
  
           } else{
@@ -126,7 +126,6 @@ export function ProductsContextProvider({children}){
        )}
     
     const cartResume = cartProduct.reduce((acc, prod) => {   
-        // const desc = prod.price - (prod.price * prod.desconto/100)
          
         if(!prod.desconto){
             const soma = acc + prod.price * prod.quantity  

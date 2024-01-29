@@ -25,7 +25,6 @@ export function SearchForm(){
                 <input type="text" placeholder="Faça a sua busca..." onChange={e => setSearch(e.target.value)}/>
                 <button type='submit' className='btn_search'> <FaSearch /></button>
              </form>
-
             </div>    
     )
 }
