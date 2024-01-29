@@ -1,4 +1,4 @@
-import { createContext, useEffect, useRef, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { toast } from 'react-toastify';
 
 export const ProducContext = createContext()
@@ -23,6 +23,8 @@ export function ProductsContextProvider({children}){
     const [isLoginOpen, setIsLoginOpen]= useState(false)
     const [isButtonNav, setIsButtonNav]= useState(false)
     const [isSearchOpen, setIsSearchOpen]= useState(false)
+
+  
    
     useEffect(() => {    
         try {
@@ -124,7 +126,7 @@ export function ProductsContextProvider({children}){
        )}
     
     const cartResume = cartProduct.reduce((acc, prod) => {   
-        const desc = prod.price - (prod.price * prod.desconto/100)
+        // const desc = prod.price - (prod.price * prod.desconto/100)
          
         if(!prod.desconto){
             const soma = acc + prod.price * prod.quantity  
@@ -169,7 +171,7 @@ export function ProductsContextProvider({children}){
             handleIncre,     
             handleDecre,
             cartResume,       
-            handleAddCartProduct,
+            handleAddCartProduct
         
             
         

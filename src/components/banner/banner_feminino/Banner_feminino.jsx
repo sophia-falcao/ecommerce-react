@@ -1,18 +1,15 @@
-import { useContext, useRef } from 'react'
 import  './Banner_feminino.css'
+import { useContext, useRef } from 'react'
 import { ProducContext } from '../../../context/productContext'
 import { Products } from '../../products/Products'
-import {Swiper, SwiperSlide} from 'swiper/react'
-import { EffectFade } from 'swiper/modules';
+
 import { FaArrowRight } from "react-icons/fa";
 import { FaArrowLeft } from "react-icons/fa";
-
-import Image2 from '../../../assets/image.png'
 
 
 export function Banner_feminino(){
 
-    const {filter, products} = useContext(ProducContext)
+    const {products} = useContext(ProducContext)
     
     const carrousel = useRef(null)
 

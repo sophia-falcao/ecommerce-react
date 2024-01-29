@@ -8,14 +8,16 @@ import { Product } from './pages/product/Product'
 import {ToastContainer, toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
+import { useContext } from 'react'
+import { ProducContext } from './context/productContext'
+
+
 import { Feminino } from './pages/Feminino/Feminino'
 import { Masculino } from './pages/Masculino/Masculino'
 import { Beleza } from './pages/Beleza/Beleza'
 import { Acessorios } from './pages/Acessorios/Acessorios'
 import { Sapatos } from './pages/Sapatos/Sapatos'
 import { Search } from './pages/Search/Search'
-import { useContext } from 'react'
-import { ProducContext } from './context/productContext'
 import { SearchForm } from './components/search/SearchForm'
 
 

@@ -1,11 +1,14 @@
-import { useContext } from "react"
+import { useContext, useState } from "react"
 import { ProducContext } from "../../context/productContext"
-import { NavLink, Link } from "react-router-dom"
+
 import './Login.css'
 
 export function Login(){
 
     const {isLoginOpen, setIsLoginOpen}= useContext(ProducContext)
+    const [modalRegisterOpen, setModalRegisterOpen]= useState(false)
+
+    
 
     return(
       
@@ -24,10 +27,12 @@ export function Login(){
                     <button>Entrar</button>
 
                 </form>
-                <div className="links">
+                <nav className="links">
                     <a href="#" className="link" > Esqueceu a senha? </a>
-                    <a href="#" className="link"> Não tem uma conta? Cadastre-se </a>
-                </div>
+                    <a href="#" className="link" > Não tem uma conta? Cadastre-se </a>
+                   
+                    
+                </nav>
                 
                 <button id="btn_close_login"onClick={() => setIsLoginOpen(false)}> X </button>
             </section>
